@@ -28,7 +28,82 @@
   </header>
   <main class="main">
     <div class="main__container">
-      main
+      <aside class="main__sidebar sidebar">
+        <div class="sidebar__info sidebar-info">
+          <figure class="sidebar-info__avatar">
+            <img src="assets/img/avatar.jpg" alt="Avatar">
+          </figure>
+          <div class="sidebar-info__text-wrapper">
+            <h1 class="sidebar-info__name" title="Aleksandr Shumatbaev">Aleksandr Shumatbaev</h1>
+            <p class="sidebar-info__title">Junior Frontend Developer</p>
+          </div>
+        </div>
+        <div class="sidebar__contacts contacts">
+          <div class="contacts__separator"></div>
+          <ul class="contacts__list">
+            <li class="contacts__item contact">
+              <div class="contact__icon-box icon-box">
+                <ion-icon class="contact__icon md hydrated" name="mail-outline" role="img" aria-label="mail outline"></ion-icon>
+              </div>
+              <div class="contact__info">
+                <p class="contact__title">Email</p>
+                <a class="contact__link" href="mailto:sh889@ya.ru">sh889@ya.ru</a>
+              </div>
+            </li>
+            <li class="contacts__item contact">
+              <div class="contact__icon-box icon-box">
+                <ion-icon class="contact__icon md hydrated" name="phone-portrait-outline" role="img" aria-label="phone portrait outline"></ion-icon>
+              </div>
+              <div class="contact__info">
+                <p class="contact__title">Phone number</p>
+                <a class="contact__link" href="tel:+79656608742">+7 965 660 87 42</a>
+              </div>
+            </li>
+            <li class="contacts__item contact">
+              <div class="contact__icon-box icon-box">
+                <ion-icon class="contact__icon md hydrated" name="calendar-outline" role="img" aria-label="calendar outline"></ion-icon>
+              </div>
+              <div class="contact__info">
+                <p class="contact__title">Date of Birth</p>
+                <time datetime="1989-12-23">December 23, 1989</time>
+              </div>
+            </li>
+            <li class="contacts__item contact">
+              <div class="contact__icon-box icon-box">
+                <ion-icon class="contact__icon md hydrated" name="location-outline" role="img" aria-label="location outline"></ion-icon>
+              </div>
+              <div class="contact__info">
+                <p class="contact__title">Address</p>
+                <address title="Russia, Republic of Bashkortostan, Ufa">Russia, Ufa</address>
+              </div>
+            </li>
+          </ul>
+          <div class="contacts__separator"></div>
+          <ul class="contacts__social-list social-list social">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/shum_sasha" title="VK: @shum_sasha" target="_blank">
+                <ion-icon class="social__icon md hydrated" name="logo-vk" role="img" aria-label="logo vk"></ion-icon>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://t.me/shums89" title="Telegram: @shums89" target="_blank">
+                <ion-icon class="social__icon md hydrated" name="send" style="transform: rotate(316deg) scale(0.8);" role="img" aria-label="send"></ion-icon>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://wa.me/+79656608742" title="WhatsApp: +79656608742" target="_blank">
+                <ion-icon class="social__icon md hydrated" name="logo-whatsapp" role="img" aria-label="logo whatsapp"></ion-icon>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://github.com/shums89" title="GitHub: @shums89" target="_blank">
+                <ion-icon class="social__icon md hydrated" name="logo-github" role="img" aria-label="logo github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main__content"></div>
     </div>
   </main>
   <footer class="footer">
@@ -36,6 +111,8 @@
       footer
     </div>
   </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
