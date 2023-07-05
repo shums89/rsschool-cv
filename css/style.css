@@ -317,7 +317,13 @@ section > h2:after {
   color: var(--light-gray-70);
   font-size: 12px;
   text-transform: uppercase;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
+}
+
+.contact__subtitle {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .social {
