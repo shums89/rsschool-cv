@@ -141,10 +141,6 @@ figure {
   background-color: var(--smoky-black);
 }
 
-* {
-  /* border: 1px solid rgb(240, 160, 160); */
-}
-
 .icon-box {
   position: relative;
   background: var(--border-gradient-onyx);
@@ -169,7 +165,7 @@ figure {
   z-index: -1;
 }
 
-section {
+section:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -473,7 +469,6 @@ section > h2:after {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  margin-bottom: 10px;
 }
 
 .project-item > a {
