@@ -551,7 +551,7 @@ section > h2:after {
   transform: scale(1.1);
 }
 
-.project-title {
+.project-item__title {
   color: var(--white);
   font-size: 15px;
   font-weight: 400;
@@ -559,7 +559,7 @@ section > h2:after {
   margin-bottom: 5px;
 }
 
-.project-category {
+.project-item__category {
   color: var(--light-gray-70);
   font-size: 14px;
   font-weight: 300;
