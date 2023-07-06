@@ -165,6 +165,10 @@ figure {
   z-index: -1;
 }
 
+ion-icon {
+  pointer-events: none;
+}
+
 section:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -331,15 +335,18 @@ section > h2:after {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  height: 30px;
 }
 
 .social__link {
   color: var(--light-gray-70);
   font-size: 18px;
+  transition: all 0.3s ease 0s;
 }
 
 .social__item .social__link:hover {
   color: var(--light-gray);
+  font-size: 30px;
 }
 
 /* MAIN CONTENT */
