@@ -39,19 +39,20 @@
 }
 
 :root {
-  --jet: rgb(56, 56, 56);
-  --onyx: rgb(43, 43, 44);
-  --eerie-black: rgb(32, 32, 34);
-  --white: rgb(255, 255, 255);
-  --smoky-black: rgb(18, 18, 18);
-  --light-gray: rgb(214, 214, 214);
-  --orange-yellow-crayola: rgb(255, 219, 112);
-  --vegas-gold: rgb(206, 177, 90);
+  --jet: rgba(56, 56, 56, 1);
+  --onyx: rgba(43, 43, 44, 1);
+  --eerie-black: rgba(32, 32, 34, 1);
+  --smoky-black: rgba(18, 18, 18, 1);
+  --white: rgba(255, 255, 255, 1);
+  --light-gray: rgba(214, 214, 214, 1);
   --light-gray-70: rgba(214, 214, 214, 0.7);
-  --shadow-1: -4px 8px 24px rgba(0, 0, 0, 0.125);
+  --orange-yellow-crayola: rgba(255, 219, 112, 1);
+  --vegas-gold: rgba(206, 177, 90, 1);
+  --shadow: -4px 8px 24px rgba(0, 0, 0, 0.125);
+  --overlay: rgba(0, 0, 0, 0.8);
   --border-gradient-onyx: linear-gradient(
     to bottom right,
-    rgb(64, 64, 64) 0%,
+    rgba(64, 64, 64, 1) 0%,
     rgba(64, 64, 64, 0) 50%,
     rgba(64, 64, 64, 0) 70%,
     rgba(64, 64, 64, 0.2) 0%
@@ -152,7 +153,7 @@ figure {
   align-items: center;
   font-size: 18px;
   color: var(--orange-yellow-crayola);
-  box-shadow: var(--shadow-1);
+  box-shadow: var(--shadow);
   z-index: 1;
 }
 
@@ -514,7 +515,7 @@ section > h2:after {
 }
 
 .project-item > a:hover .project-item__img-wrapper:before {
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--overlay);
 }
 
 .project-item__icon-box {
