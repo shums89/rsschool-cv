@@ -199,7 +199,7 @@ section > h2:after {
 
 .nav {
   color: var(--light-gray);
-  background: var(--onyx);
+  background: var(--eerie-black);
   border: 1px solid var(--jet);
   border-radius: 10px;
 }
@@ -563,4 +563,48 @@ section > h2:after {
   color: var(--light-gray-70);
   font-size: 14px;
   font-weight: 300;
+}
+
+/* FOOTER */
+
+.footer__list {
+  color: var(--light-gray);
+  background: var(--eerie-black);
+  border: 1px solid var(--jet);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 15px;
+}
+
+.footer__github-link {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.footer__item .footer__github-link {
+  margin-right: auto;
+}
+
+.footer__item:hover .footer__github-link {
+  color: var(--white);
+  transition: all 0.3s ease 0s;
+  font-size: 35px;
+}
+
+.footer__rsschool-link {
+  color: var(--white);
+}
+
+.footer__item:hover .footer__rsschool-link img {
+  transition: all 0.3s ease 0s;
+  transform: scale(1.1);
+}
+
+.footer__rsschool-link img {
+  max-width: 100px;
+  min-height: 50px;
 }
