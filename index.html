@@ -5,11 +5,289 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <title>CV</title>
 </head>
 
-<body>
-  <p>Aleksandr Shumatbaev</p>
+<body class="body">
+  <header class="header">
+    <div class="header__container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code Examples</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__container">
+      <aside class="main__sidebar sidebar">
+        <div class="sidebar__info sidebar-info">
+          <figure class="sidebar-info__avatar">
+            <img src="assets/img/avatar.jpg" alt="Avatar">
+          </figure>
+          <div class="sidebar-info__text-wrapper">
+            <h1 class="sidebar-info__name" title="Aleksandr Shumatbaev">Aleksandr<br>Shumatbaev</h1>
+            <p class="sidebar-info__title">Junior Frontend Developer</p>
+          </div>
+        </div>
+        <div class="sidebar__contacts contacts">
+          <div class="contacts__separator"></div>
+          <ul class="contacts__list">
+            <li class="contacts__item contact">
+              <div class="contact__icon-box icon-box">
+                <ion-icon class="contact__icon" name="mail-outline" role="img" aria-label="mail outline"></ion-icon>
+              </div>
+              <div class="contact__info">
+                <p class="contact__title">Email</p>
+                <a class="contact__subtitle" href="mailto:sh889@ya.ru">sh889@ya.ru</a>
+              </div>
+            </li>
+            <li class="contacts__item contact">
+              <div class="contact__icon-box icon-box">
+                <ion-icon class="contact__icon" name="phone-portrait-outline" role="img" aria-label="phone portrait outline"></ion-icon>
+              </div>
+              <div class="contact__info">
+                <p class="contact__title">Phone number</p>
+                <a class="contact__subtitle" href="tel:+79656608742">+7 965 660 87 42</a>
+              </div>
+            </li>
+            <li class="contacts__item contact">
+              <div class="contact__icon-box icon-box">
+                <ion-icon class="contact__icon" name="calendar-outline" role="img" aria-label="calendar outline"></ion-icon>
+              </div>
+              <div class="contact__info">
+                <p class="contact__title">Date of Birth</p>
+                <time class="contact__subtitle" datetime="1989-12-23">December 23, 1989</time>
+              </div>
+            </li>
+            <li class="contacts__item contact">
+              <div class="contact__icon-box icon-box">
+                <ion-icon class="contact__icon" name="location-outline" role="img" aria-label="location outline"></ion-icon>
+              </div>
+              <div class="contact__info">
+                <p class="contact__title">Address</p>
+                <address class="contact__subtitle" title="Russia, Republic of Bashkortostan, Ufa">Russia, Ufa</address>
+              </div>
+            </li>
+          </ul>
+          <div class="contacts__separator"></div>
+          <ul class="contacts__social-list social-list social">
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/shum_sasha" title="VK: @shum_sasha" target="_blank">
+                <ion-icon class="social__icon" name="logo-vk" role="img" aria-label="logo vk"></ion-icon>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://t.me/shums89" title="Telegram: @shums89" target="_blank">
+                <ion-icon class="social__icon" name="send" style="transform: rotate(316deg) scale(0.8);" role="img" aria-label="logo telegram"></ion-icon>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://wa.me/+79656608742" title="WhatsApp: +79656608742" target="_blank">
+                <ion-icon class="social__icon" name="logo-whatsapp" role="img" aria-label="logo whatsapp"></ion-icon>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://github.com/shums89" title="GitHub: @shums89" target="_blank">
+                <ion-icon class="social__icon" name="logo-github" role="img" aria-label="logo github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main__content">
+        <section class="about" id="about">
+          <h2 class="about__title">About me</h2>
+          <p class="about__text">My main goal is to gain the necessary skills to work as a front-end developer, grow professionally and expand my social circle. Worked as a database developer for several years.</p>
+        </section>
+        <section class="skills" id="skills">
+          <h2 class="skills__title">Skills</h2>
+          <ul class="skills__list">
+            <li class="skills__item">HTML</li>
+            <li class="skills__item">CSS/SCSS</li>
+            <li class="skills__item">JS</li>
+            <li class="skills__item">Git/GitHub</li>
+            <li class="skills__item">VS Code</li>
+            <li class="skills__item">MS SQL Server</li>
+          </ul>
+        </section>
+        <section class="code" id="code">
+          <h2 class="code__title">Code Examples</h2>
+          <code class="code__text">const reverseWords = str => str.split('&nbsp;').reverse().join('&nbsp;');</code>
+        </section>
+        <section class="education" id="education">
+          <h2 class="education__title">Education</h2>
+          <div class="education__universities timeline">
+            <div class="timeline__title-wrapper">
+              <div class="timeline__icon-box icon-box">
+                <ion-icon class="timeline__icon" name="briefcase-outline" role="img" aria-label="briefcase outline"></ion-icon>
+              </div>
+              <h3 class="timeline__title">Universities</h3>
+            </div>
+            <ol class="timeline__list">
+              <li class="timeline__item timeline-item">
+                <h4 class="timeline-item__title">Master's degree</h4>
+                <div class="timeline-item__subtitle-wrapper">
+                  <span>2015</span>
+                  <p class="timeline-item__subtitle">Ufa State Petroleum Technical University (USPTU)</p>
+                </div>
+              </li>
+              <li class="timeline__item timeline-item">
+                <h4 class="timeline-item__title">Bachelor</h4>
+                <div class="timeline-item__subtitle-wrapper">
+                  <span>2012</span>
+                  <p class="timeline-item__subtitle">Ufa State Petroleum Technical University (USPTU)</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="education__courses timeline">
+            <div class="timeline__title-wrapper">
+              <div class="timeline__icon-box icon-box">
+                <ion-icon class="timeline__icon" name="ribbon-outline" role="img" aria-label="ribbon outline"></ion-icon>
+              </div>
+              <h3 class="timeline__title">Courses</h3>
+            </div>
+            <ol class="timeline__list">
+              <li class="timeline__item timeline-item">
+                <h4 class="timeline-item__title">Frontend developer</h4>
+                <div class="timeline-item__subtitle-wrapper">
+                  <span>present</span>
+                  <p class="timeline-item__subtitle">HTML Academy</p>
+                </div>
+                <p class="timeline-item__text">Self-guided course: Profession Front-end developer</p>
+              </li>
+              <li class="timeline__item timeline-item">
+                <h4 class="timeline-item__title">Frontend developer</h4>
+                <div class="timeline-item__subtitle-wrapper">
+                  <span>2020</span>
+                  <p class="timeline-item__subtitle">HTML Academy</p>
+                </div>
+                <p class="timeline-item__text">JavaScript. Professional Development of Web Interfaces</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="experience" id="experience">
+          <h2 class="experience__title">Experience</h2>
+          <div class="education__universities timeline">
+            <div class="timeline__title-wrapper">
+              <div class="timeline__icon-box icon-box">
+                <ion-icon class="timeline__icon" name="briefcase-outline" role="img" aria-label="briefcase outline"></ion-icon>
+              </div>
+              <h3 class="timeline__title">Job</h3>
+            </div>
+            <ol class="timeline__list">
+              <li class="timeline__item timeline-item">
+                <h4 class="timeline-item__title">Software engineer</h4>
+                <div class="timeline-item__subtitle-wrapper">
+                  <span>2014 - present</span>
+                  <p class="timeline-item__subtitle">LLC LC "Respect"</p>
+                </div>
+              </li>
+              <li class="timeline__item timeline-item">
+                <h4 class="timeline-item__title">Software Implementation and Support Specialist</h4>
+                <div class="timeline-item__subtitle-wrapper">
+                  <span>2012 - 2013</span>
+                  <p class="timeline-item__subtitle">LLC "Distinct"</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="languages" id="languages">
+          <h2 class="languages">Languages</h2>
+          <ul class="languages__list">
+            <li class="languages__item">Russian (Native)</li>
+            <li class="languages__item">English (A1)</li>
+          </ul>
+        </section>
+        <section class="projects" id="projects">
+          <h2 class="projects__title">Projects</h2>
+          <ul class="projects__list">
+            <li class="project__item project-item">
+              <a class="project-item__link" href="https://shums89.github.io/tuotown" target="_blank">
+                <figure class="project-item__img-wrapper">
+                  <div class="project-item__icon-box">
+                    <ion-icon class="project-item__icon" name="eye-outline" role="img" aria-label="eye outline"></ion-icon>
+                  </div>
+                  <img class="project-item__img" src="assets/img/project-1.jpeg" alt="Tuotown" loading="lazy">
+                </figure>
+                <h3 class="project-item__title">Online knife store "Tuotown"</h3>
+                <p class="project-item__category">Personal (html/scss/js)</p>
+              </a>
+            </li>
+            <li class="project__item project-item">
+              <a class="project-item__link" href="https://shums89.github.io/kekstagram" target="_blank">
+                <figure class="project-item__img-wrapper">
+                  <div class="project-item__icon-box">
+                    <ion-icon class="project-item__icon" name="eye-outline" role="img" aria-label="eye outline"></ion-icon>
+                  </div>
+                  <img class="project-item__img" src="assets/img/project-2.jpeg" alt="Kekstagram" loading="lazy">
+                </figure>
+                <h3 class="project-item__title">Service for uploading and viewing images "Kekstagram"</h3>
+                <p class="project-item__category">Course (js)</p>
+              </a>
+            </li>
+            <li class="project__item project-item">
+              <a class="project-item__link" href="https://shums89.github.io/cat-energy" target="_blank">
+                <figure class="project-item__img-wrapper">
+                  <div class="project-item__icon-box">
+                    <ion-icon class="project-item__icon" name="eye-outline" role="img" aria-label="eye outline"></ion-icon>
+                  </div>
+                  <img class="project-item__img" src="assets/img/project-3.jpeg" alt="Kat Energy" loading="lazy">
+                </figure>
+                <h3 class="project-item__title">Functional food for cats "Kat Energy"</h3>
+                <p class="project-item__category">Course (html/less)</p>
+              </a>
+            </li>
+            <li class="project__item project-item">
+              <a class="project-item__link" href="https://shums89.github.io/technomart" target="_blank">
+                <figure class="project-item__img-wrapper">
+                  <div class="project-item__icon-box">
+                    <ion-icon class="project-item__icon" name="eye-outline" role="img" aria-label="eye outline"></ion-icon>
+                  </div>
+                  <img class="project-item__img" src="assets/img/project-4.jpeg" alt="Technomart" loading="lazy">
+                </figure>
+                <h3 class="project-item__title">Online store of tools and building materials "Technomart"</h3>
+                <p class="project-item__category">Course (html/css)</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <div class="footer__copyright">&copy; 2023 Aleksandr Shumatbaev</div>
+        </li>
+        <li class="footer__item">
+          <a class="footer__github-link" href="https://github.com/shums89" title="GitHub: @shums89" target="_blank">
+            <ion-icon name="logo-github" role="img" aria-label="logo github"></ion-icon>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__rsschool-link" href="https://rs.school/js" title="rsschool course" target="_blank">
+            <img src="assets/img/rs_school_js.svg" alt="Logo rsschool">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
