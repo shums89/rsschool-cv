@@ -346,9 +346,30 @@ section > h2:after {
 }
 
 .contact__subtitle {
+  position: relative;
   font: inherit;
   font-size: 14px;
   font-weight: 300;
+}
+
+a.contact__subtitle:hover {
+  color: var(--orange-yellow-crayola);
+}
+
+a.contact__subtitle:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  height: 1px;
+  width: 0;
+  transform: translateX(-50%);
+  background: var(--orange-yellow-crayola);
+  transition: all 0.3s ease 0s;
+}
+
+a.contact__subtitle:hover:after {
+  width: 100%;
 }
 
 .social {
@@ -360,6 +381,7 @@ section > h2:after {
 }
 
 .social__link {
+  display: block;
   color: var(--light-gray-70);
   font-size: 18px;
   transition: all 0.3s ease 0s;
@@ -367,7 +389,11 @@ section > h2:after {
 
 .social__item .social__link:hover {
   color: var(--light-gray);
-  font-size: 30px;
+  transform: scale(1.2);
+}
+
+.social__icon_telegram {
+  transform: rotate(316deg) scale(0.8);
 }
 
 /* MAIN CONTENT */
